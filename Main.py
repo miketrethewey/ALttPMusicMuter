@@ -59,11 +59,11 @@ if __name__ == '__main__':
     for vol,byteList in bytes.items():
     	if args.music == "off":
     	  vol = 0x00
-//    	logger.info(vol)
+#    	logger.info(vol)
     	for byte in byteList:
     	  write_byte(rom,byte,vol)
-//    	  logger.info(byte)
-//    	logger.info('')
+#    	  logger.info(byte)
+#    	logger.info('')
 
     outfilename = '%s' % (os.path.basename(args.rom).replace(".sfc",""))
     outfilename = outfilename + '_' + "music" + ("less" if (args.music == "off") else "")
